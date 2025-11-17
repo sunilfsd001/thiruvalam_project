@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+html::selection{
+    color: white;
+    background-color: black;
+}
+html,body{
+    scroll-behavior: smooth ;
+}
+a{
+    text-decoration: none;
+    color:white;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:25px;
+    background-color:#2e4764;
+    backdrop-filter:blur(25px);
+    height:75px;
+    color:white;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 50px;
+}
+nav ul li a{
+    color:rgb(182, 182, 182);
+    text-decoration: none;
+    transition: all .2s ease-in;
+}
+nav ul li a:hover{
+    color:white;
+    border-bottom:1px rgb(255, 255, 255) solid;
+}
+.main{
+    height:100vh;
+    background: url(./image/Thiruvalam_\(2\).jpg) center center/cover no-repeat ;
+    color:white;
+}
+.text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    height: 100%;
+    width: 100%;
+    padding:80px;
+    background:linear-gradient(to top, rgba(0,0,0,.9),rgba(0,0,0,.09));
+}
+.text h1{
+    font-size: 50px;
+}
+.text p{
+    font-size: 15px;
+    color:rgb(221, 221, 221);
+    text-align: center;
+}
+.symbol{
+    cursor: pointer;
+    display: flex;
+}
+.symbol p,.arrow{
+    padding: 10px;
+    border: 1px white solid;
+}
+.symbol p:hover,.arrow:hover{
+    color:black;
+    background-color: white;
+}
+.section2{
+    padding: 50px;
+}
+.section2 h2{
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+.section2 h1{
+    margin-bottom: 30px;
+}
+.section2 p{
+    font-size: 15px;
+    margin-bottom: 70px;
+}
+.gallery{
+    height: 100vh;
+    padding: 50px;
+    background-color: #eeeeee;
+    display: grid;
+    text-align: center;
+    font-size: 25px;
+}
+.img-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    overflow-x: scroll;
+    background-color: white;
+}
+.img-box::-webkit-scrollbar{
+    display: none;
+}
+.img-box img{
+    margin: 20px;
+    max-height: 300px;   
+    transition: all .3s ease-in-out;
+}
+.img-box img:hover{
+    scale: 1.1;
+    box-shadow: 0 15px 15px black;
+}
+/* Footer Section  */
+    .legend { font-style:italic; color:#444; background:#fbfbfb; padding:10px; border-left:4px solid #e0e0e0; }
+    .meta { font-size:0.9rem; color:#666; margin-bottom: 60px;}
+    .refs li { margin-bottom:8px; }
+
+footer{
+    background-color: rgb(184, 184, 184);
+    color:rgb(0, 0, 0);
+    font-size: 14px;
+    padding-top: 20px;
+}
+footer h2{
+    text-align: center;
+}
+footer ul{
+    margin:50px
+}
+footer ul li{
+    margin: 10px;
+}
+.copyright-sec{
+    height: 75px;
+    width: 100%;
+    color:white;
+    text-align: center;
+    padding:20px;
+    background-color: black;
+}
+.copyright-sec span{
+    font-size: 15px;
+}
+.copyright-sec p{
+    margin-top: 5px;
+    font-size: 10px;
+}
